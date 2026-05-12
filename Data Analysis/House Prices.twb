@@ -1,0 +1,2757 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0912.2314                               -->
+<workbook original-version='18.1' source-build='2025.2.3 (20252.25.0912.2314)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='train' inline='true' name='federated.1noxwxz16ry83013cnkfo1ddhl8o' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='train' name='textscan.0y7rfi21kvb4g117cz1yz1ddi0hq'>
+            <connection class='textscan' directory='C:/Users/NITRO 5/Documents/GitHub/House-Prices---Advanced-Regression-Techniques/Data' filename='train.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0y7rfi21kvb4g117cz1yz1ddi0hq' name='train.csv' table='[train#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_SV' separator=','>
+            <column datatype='integer' name='Id' ordinal='0' />
+            <column datatype='integer' name='MSSubClass' ordinal='1' />
+            <column datatype='string' name='MSZoning' ordinal='2' />
+            <column datatype='string' name='LotFrontage' ordinal='3' />
+            <column datatype='integer' name='LotArea' ordinal='4' />
+            <column datatype='string' name='Street' ordinal='5' />
+            <column datatype='string' name='Alley' ordinal='6' />
+            <column datatype='string' name='LotShape' ordinal='7' />
+            <column datatype='string' name='LandContour' ordinal='8' />
+            <column datatype='string' name='Utilities' ordinal='9' />
+            <column datatype='string' name='LotConfig' ordinal='10' />
+            <column datatype='string' name='LandSlope' ordinal='11' />
+            <column datatype='string' name='Neighborhood' ordinal='12' />
+            <column datatype='string' name='Condition1' ordinal='13' />
+            <column datatype='string' name='Condition2' ordinal='14' />
+            <column datatype='string' name='BldgType' ordinal='15' />
+            <column datatype='string' name='HouseStyle' ordinal='16' />
+            <column datatype='integer' name='OverallQual' ordinal='17' />
+            <column datatype='integer' name='OverallCond' ordinal='18' />
+            <column datatype='integer' name='YearBuilt' ordinal='19' />
+            <column datatype='integer' name='YearRemodAdd' ordinal='20' />
+            <column datatype='string' name='RoofStyle' ordinal='21' />
+            <column datatype='string' name='RoofMatl' ordinal='22' />
+            <column datatype='string' name='Exterior1st' ordinal='23' />
+            <column datatype='string' name='Exterior2nd' ordinal='24' />
+            <column datatype='string' name='MasVnrType' ordinal='25' />
+            <column datatype='integer' name='MasVnrArea' ordinal='26' />
+            <column datatype='string' name='ExterQual' ordinal='27' />
+            <column datatype='string' name='ExterCond' ordinal='28' />
+            <column datatype='string' name='Foundation' ordinal='29' />
+            <column datatype='string' name='BsmtQual' ordinal='30' />
+            <column datatype='string' name='BsmtCond' ordinal='31' />
+            <column datatype='string' name='BsmtExposure' ordinal='32' />
+            <column datatype='string' name='BsmtFinType1' ordinal='33' />
+            <column datatype='integer' name='BsmtFinSF1' ordinal='34' />
+            <column datatype='string' name='BsmtFinType2' ordinal='35' />
+            <column datatype='integer' name='BsmtFinSF2' ordinal='36' />
+            <column datatype='integer' name='BsmtUnfSF' ordinal='37' />
+            <column datatype='integer' name='TotalBsmtSF' ordinal='38' />
+            <column datatype='string' name='Heating' ordinal='39' />
+            <column datatype='string' name='HeatingQC' ordinal='40' />
+            <column datatype='string' name='CentralAir' ordinal='41' />
+            <column datatype='string' name='Electrical' ordinal='42' />
+            <column datatype='integer' name='1stFlrSF' ordinal='43' />
+            <column datatype='integer' name='2ndFlrSF' ordinal='44' />
+            <column datatype='integer' name='LowQualFinSF' ordinal='45' />
+            <column datatype='integer' name='GrLivArea' ordinal='46' />
+            <column datatype='integer' name='BsmtFullBath' ordinal='47' />
+            <column datatype='integer' name='BsmtHalfBath' ordinal='48' />
+            <column datatype='integer' name='FullBath' ordinal='49' />
+            <column datatype='integer' name='HalfBath' ordinal='50' />
+            <column datatype='integer' name='BedroomAbvGr' ordinal='51' />
+            <column datatype='integer' name='KitchenAbvGr' ordinal='52' />
+            <column datatype='string' name='KitchenQual' ordinal='53' />
+            <column datatype='integer' name='TotRmsAbvGrd' ordinal='54' />
+            <column datatype='string' name='Functional' ordinal='55' />
+            <column datatype='integer' name='Fireplaces' ordinal='56' />
+            <column datatype='string' name='FireplaceQu' ordinal='57' />
+            <column datatype='string' name='GarageType' ordinal='58' />
+            <column datatype='string' name='GarageYrBlt' ordinal='59' />
+            <column datatype='string' name='GarageFinish' ordinal='60' />
+            <column datatype='integer' name='GarageCars' ordinal='61' />
+            <column datatype='integer' name='GarageArea' ordinal='62' />
+            <column datatype='string' name='GarageQual' ordinal='63' />
+            <column datatype='string' name='GarageCond' ordinal='64' />
+            <column datatype='string' name='PavedDrive' ordinal='65' />
+            <column datatype='integer' name='WoodDeckSF' ordinal='66' />
+            <column datatype='integer' name='OpenPorchSF' ordinal='67' />
+            <column datatype='integer' name='EnclosedPorch' ordinal='68' />
+            <column datatype='integer' name='3SsnPorch' ordinal='69' />
+            <column datatype='integer' name='ScreenPorch' ordinal='70' />
+            <column datatype='integer' name='PoolArea' ordinal='71' />
+            <column datatype='string' name='PoolQC' ordinal='72' />
+            <column datatype='string' name='Fence' ordinal='73' />
+            <column datatype='string' name='MiscFeature' ordinal='74' />
+            <column datatype='integer' name='MiscVal' ordinal='75' />
+            <column datatype='integer' name='MoSold' ordinal='76' />
+            <column datatype='integer' name='YrSold' ordinal='77' />
+            <column datatype='string' name='SaleType' ordinal='78' />
+            <column datatype='string' name='SaleCondition' ordinal='79' />
+            <column datatype='integer' name='SalePrice' ordinal='80' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_SV&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Id]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MSSubClass</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MSSubClass]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>MSSubClass</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MSZoning</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MSZoning]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>MSZoning</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LotFrontage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LotFrontage]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>LotFrontage</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LotArea</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LotArea]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>LotArea</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Street</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Street]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Street</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alley</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Alley]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Alley</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LotShape</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LotShape]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>LotShape</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LandContour</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LandContour]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>LandContour</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Utilities</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Utilities]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Utilities</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LotConfig</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LotConfig]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>LotConfig</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LandSlope</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LandSlope]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>LandSlope</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Neighborhood</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Neighborhood]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Neighborhood</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Condition1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Condition1]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Condition1</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Condition2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Condition2]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Condition2</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BldgType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BldgType]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BldgType</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HouseStyle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HouseStyle]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>HouseStyle</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OverallQual</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OverallQual]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>OverallQual</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OverallCond</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OverallCond]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>OverallCond</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearBuilt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearBuilt]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>YearBuilt</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearRemodAdd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearRemodAdd]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>YearRemodAdd</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RoofStyle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RoofStyle]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>RoofStyle</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RoofMatl</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RoofMatl]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>RoofMatl</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exterior1st</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Exterior1st]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Exterior1st</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exterior2nd</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Exterior2nd]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Exterior2nd</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MasVnrType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MasVnrType]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>MasVnrType</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MasVnrArea</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MasVnrArea]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>MasVnrArea</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ExterQual</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ExterQual]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>ExterQual</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ExterCond</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ExterCond]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>ExterCond</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Foundation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Foundation]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Foundation</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtQual</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BsmtQual]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BsmtQual</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtCond</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BsmtCond]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BsmtCond</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtExposure</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BsmtExposure]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BsmtExposure</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtFinType1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BsmtFinType1]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BsmtFinType1</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtFinSF1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BsmtFinSF1]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BsmtFinSF1</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtFinType2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BsmtFinType2]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BsmtFinType2</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtFinSF2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BsmtFinSF2]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BsmtFinSF2</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtUnfSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BsmtUnfSF]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BsmtUnfSF</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalBsmtSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalBsmtSF]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>TotalBsmtSF</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Heating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Heating]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Heating</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HeatingQC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HeatingQC]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>HeatingQC</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CentralAir</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CentralAir]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>CentralAir</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Electrical</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Electrical]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Electrical</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1stFlrSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1stFlrSF]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>1stFlrSF</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2ndFlrSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2ndFlrSF]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>2ndFlrSF</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LowQualFinSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LowQualFinSF]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>LowQualFinSF</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GrLivArea</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GrLivArea]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>GrLivArea</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtFullBath</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BsmtFullBath]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BsmtFullBath</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtHalfBath</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BsmtHalfBath]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BsmtHalfBath</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FullBath</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FullBath]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>FullBath</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HalfBath</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HalfBath]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>HalfBath</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BedroomAbvGr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BedroomAbvGr]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>BedroomAbvGr</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KitchenAbvGr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[KitchenAbvGr]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>KitchenAbvGr</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KitchenQual</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[KitchenQual]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>KitchenQual</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotRmsAbvGrd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotRmsAbvGrd]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>TotRmsAbvGrd</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Functional</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Functional]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Functional</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fireplaces</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fireplaces]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Fireplaces</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FireplaceQu</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FireplaceQu]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>FireplaceQu</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GarageType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GarageType]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>GarageType</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GarageYrBlt</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GarageYrBlt]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>GarageYrBlt</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GarageFinish</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GarageFinish]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>GarageFinish</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GarageCars</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GarageCars]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>GarageCars</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GarageArea</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GarageArea]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>GarageArea</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GarageQual</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GarageQual]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>GarageQual</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GarageCond</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GarageCond]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>GarageCond</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PavedDrive</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PavedDrive]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>PavedDrive</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WoodDeckSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WoodDeckSF]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>WoodDeckSF</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OpenPorchSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OpenPorchSF]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>OpenPorchSF</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EnclosedPorch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EnclosedPorch]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>EnclosedPorch</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>3SsnPorch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[3SsnPorch]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>3SsnPorch</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ScreenPorch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ScreenPorch]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>ScreenPorch</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PoolArea</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PoolArea]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>PoolArea</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PoolQC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PoolQC]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>PoolQC</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fence</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fence]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>Fence</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MiscFeature</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MiscFeature]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>MiscFeature</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MiscVal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MiscVal]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>MiscVal</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MoSold</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MoSold]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>MoSold</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YrSold</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YrSold]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>YrSold</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SaleType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SaleType]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>SaleType</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SaleCondition</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SaleCondition]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>SaleCondition</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SalePrice</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SalePrice]</local-name>
+            <parent-name>[train.csv]</parent-name>
+            <remote-alias>SalePrice</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Bedroom Abv Gr' datatype='integer' name='[BedroomAbvGr]' role='measure' type='quantitative' />
+      <column caption='Bldg Type' datatype='string' name='[BldgType]' role='dimension' type='nominal' />
+      <column caption='Bsmt Cond' datatype='string' name='[BsmtCond]' role='dimension' type='nominal' />
+      <column caption='Bsmt Exposure' datatype='string' name='[BsmtExposure]' role='dimension' type='nominal' />
+      <column caption='Bsmt Full Bath' datatype='integer' name='[BsmtFullBath]' role='measure' type='quantitative' />
+      <column caption='Bsmt Half Bath' datatype='integer' name='[BsmtHalfBath]' role='measure' type='quantitative' />
+      <column caption='Bsmt Qual' datatype='string' name='[BsmtQual]' role='dimension' type='nominal' />
+      <column caption='Bsmt Unf SF' datatype='integer' name='[BsmtUnfSF]' role='measure' type='quantitative' />
+      <column caption='Central Air' datatype='string' name='[CentralAir]' role='dimension' type='nominal' />
+      <column caption='Enclosed Porch' datatype='integer' name='[EnclosedPorch]' role='measure' type='quantitative' />
+      <column caption='Exter Cond' datatype='string' name='[ExterCond]' role='dimension' type='nominal' />
+      <column caption='Exter Qual' datatype='string' name='[ExterQual]' role='dimension' type='nominal' />
+      <column caption='Fireplace Qu' datatype='string' name='[FireplaceQu]' role='dimension' type='nominal' />
+      <column caption='Full Bath' datatype='integer' name='[FullBath]' role='measure' type='quantitative' />
+      <column caption='Garage Area' datatype='integer' name='[GarageArea]' role='measure' type='quantitative' />
+      <column caption='Garage Cars' datatype='integer' name='[GarageCars]' role='measure' type='quantitative' />
+      <column caption='Garage Cond' datatype='string' name='[GarageCond]' role='dimension' type='nominal' />
+      <column caption='Garage Finish' datatype='string' name='[GarageFinish]' role='dimension' type='nominal' />
+      <column caption='Garage Qual' datatype='string' name='[GarageQual]' role='dimension' type='nominal' />
+      <column caption='Garage Type' datatype='string' name='[GarageType]' role='dimension' type='nominal' />
+      <column caption='Garage Yr Blt' datatype='string' name='[GarageYrBlt]' role='dimension' type='nominal' />
+      <column caption='Gr Liv Area' datatype='integer' name='[GrLivArea]' role='measure' type='quantitative' />
+      <column caption='Half Bath' datatype='integer' name='[HalfBath]' role='measure' type='quantitative' />
+      <column caption='Heating QC' datatype='string' name='[HeatingQC]' role='dimension' type='nominal' />
+      <column caption='House Style' datatype='string' name='[HouseStyle]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Id]' role='dimension' type='ordinal' />
+      <column caption='Kitchen Abv Gr' datatype='integer' name='[KitchenAbvGr]' role='measure' type='quantitative' />
+      <column caption='Kitchen Qual' datatype='string' name='[KitchenQual]' role='dimension' type='nominal' />
+      <column caption='Land Contour' datatype='string' name='[LandContour]' role='dimension' type='nominal' />
+      <column caption='Land Slope' datatype='string' name='[LandSlope]' role='dimension' type='nominal' />
+      <column caption='Lot Area' datatype='integer' name='[LotArea]' role='measure' type='quantitative' />
+      <column caption='Lot Config' datatype='string' name='[LotConfig]' role='dimension' type='nominal' />
+      <column caption='Lot Frontage' datatype='string' name='[LotFrontage]' role='dimension' type='nominal' />
+      <column caption='Lot Shape' datatype='string' name='[LotShape]' role='dimension' type='nominal' />
+      <column caption='Low Qual Fin SF' datatype='integer' name='[LowQualFinSF]' role='measure' type='quantitative' />
+      <column caption='MS Sub Class' datatype='integer' name='[MSSubClass]' role='measure' type='quantitative' />
+      <column caption='MS Zoning' datatype='string' name='[MSZoning]' role='dimension' type='nominal' />
+      <column caption='Mas Vnr Area' datatype='integer' name='[MasVnrArea]' role='measure' type='quantitative' />
+      <column caption='Mas Vnr Type' datatype='string' name='[MasVnrType]' role='dimension' type='nominal' />
+      <column caption='Misc Feature' datatype='string' name='[MiscFeature]' role='dimension' type='nominal' />
+      <column caption='Misc Val' datatype='integer' name='[MiscVal]' role='measure' type='quantitative' />
+      <column caption='Mo Sold' datatype='integer' name='[MoSold]' role='measure' type='quantitative' />
+      <column caption='Open Porch SF' datatype='integer' name='[OpenPorchSF]' role='measure' type='quantitative' />
+      <column caption='Overall Cond' datatype='integer' name='[OverallCond]' role='measure' type='quantitative' />
+      <column caption='Overall Qual' datatype='integer' name='[OverallQual]' role='measure' type='quantitative' />
+      <column caption='Paved Drive' datatype='string' name='[PavedDrive]' role='dimension' type='nominal' />
+      <column caption='Pool Area' datatype='integer' name='[PoolArea]' role='measure' type='quantitative' />
+      <column caption='Pool QC' datatype='string' name='[PoolQC]' role='dimension' type='nominal' />
+      <column caption='Roof Matl' datatype='string' name='[RoofMatl]' role='dimension' type='nominal' />
+      <column caption='Roof Style' datatype='string' name='[RoofStyle]' role='dimension' type='nominal' />
+      <column caption='Sale Price (agrupación) 2' datatype='integer' name='[Sale Price (agrupación) 2]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='4' formula='[SalePrice]' peg='0' size='50000' />
+      </column>
+      <column datatype='integer' name='[Sale Price (agrupación)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='4' formula='[SalePrice]' peg='0' size='25311' />
+      </column>
+      <column caption='Sale Condition' datatype='string' name='[SaleCondition]' role='dimension' type='nominal' />
+      <column caption='Sale Price' datatype='integer' name='[SalePrice]' role='measure' type='quantitative' />
+      <column caption='Sale Type' datatype='string' name='[SaleType]' role='dimension' type='nominal' />
+      <column caption='Screen Porch' datatype='integer' name='[ScreenPorch]' role='measure' type='quantitative' />
+      <column caption='Tot Rms Abv Grd' datatype='integer' name='[TotRmsAbvGrd]' role='measure' type='quantitative' />
+      <column caption='Total Bsmt SF' datatype='integer' name='[TotalBsmtSF]' role='measure' type='quantitative' />
+      <column caption='Wood Deck SF' datatype='integer' name='[WoodDeckSF]' role='measure' type='quantitative' />
+      <column caption='Year Built' datatype='integer' name='[YearBuilt]' role='dimension' type='quantitative' />
+      <column caption='Year Remod Add' datatype='integer' name='[YearRemodAdd]' role='dimension' type='quantitative' />
+      <column caption='Yr Sold' datatype='integer' name='[YrSold]' role='dimension' type='quantitative' />
+      <column caption='train.csv' datatype='table' name='[__tableau_internal_object_id__].[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/NITRO5~1/AppData/Local/Temp/TableauTemp/#TableauTemp_0jy0b6y12vbtcr1d4drmc03688t0.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/12/2026 02:56:04 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1460</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MSSubClass</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MSSubClass]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MSSubClass</remote-alias>
+              <ordinal>1</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MSZoning</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MSZoning]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MSZoning</remote-alias>
+              <ordinal>2</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LotFrontage</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LotFrontage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LotFrontage</remote-alias>
+              <ordinal>3</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>112</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LotArea</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[LotArea]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LotArea</remote-alias>
+              <ordinal>4</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>953</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Street</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Street]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Street</remote-alias>
+              <ordinal>5</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Alley</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Alley]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Alley</remote-alias>
+              <ordinal>6</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LotShape</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LotShape]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LotShape</remote-alias>
+              <ordinal>7</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LandContour</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LandContour]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LandContour</remote-alias>
+              <ordinal>8</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Utilities</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Utilities]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Utilities</remote-alias>
+              <ordinal>9</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LotConfig</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LotConfig]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LotConfig</remote-alias>
+              <ordinal>10</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LandSlope</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LandSlope]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LandSlope</remote-alias>
+              <ordinal>11</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Neighborhood</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Neighborhood]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Neighborhood</remote-alias>
+              <ordinal>12</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Condition1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Condition1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Condition1</remote-alias>
+              <ordinal>13</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Condition2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Condition2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Condition2</remote-alias>
+              <ordinal>14</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BldgType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BldgType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BldgType</remote-alias>
+              <ordinal>15</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HouseStyle</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[HouseStyle]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HouseStyle</remote-alias>
+              <ordinal>16</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OverallQual</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[OverallQual]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OverallQual</remote-alias>
+              <ordinal>17</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OverallCond</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[OverallCond]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OverallCond</remote-alias>
+              <ordinal>18</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YearBuilt</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[YearBuilt]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YearBuilt</remote-alias>
+              <ordinal>19</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>109</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YearRemodAdd</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[YearRemodAdd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YearRemodAdd</remote-alias>
+              <ordinal>20</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RoofStyle</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[RoofStyle]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RoofStyle</remote-alias>
+              <ordinal>21</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RoofMatl</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[RoofMatl]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RoofMatl</remote-alias>
+              <ordinal>22</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Exterior1st</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Exterior1st]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Exterior1st</remote-alias>
+              <ordinal>23</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Exterior2nd</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Exterior2nd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Exterior2nd</remote-alias>
+              <ordinal>24</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MasVnrType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MasVnrType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MasVnrType</remote-alias>
+              <ordinal>25</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MasVnrArea</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MasVnrArea]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MasVnrArea</remote-alias>
+              <ordinal>26</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>308</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ExterQual</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ExterQual]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ExterQual</remote-alias>
+              <ordinal>27</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ExterCond</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ExterCond]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ExterCond</remote-alias>
+              <ordinal>28</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Foundation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Foundation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Foundation</remote-alias>
+              <ordinal>29</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BsmtQual</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BsmtQual]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BsmtQual</remote-alias>
+              <ordinal>30</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BsmtCond</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BsmtCond]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BsmtCond</remote-alias>
+              <ordinal>31</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BsmtExposure</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BsmtExposure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BsmtExposure</remote-alias>
+              <ordinal>32</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BsmtFinType1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BsmtFinType1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BsmtFinType1</remote-alias>
+              <ordinal>33</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BsmtFinSF1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[BsmtFinSF1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BsmtFinSF1</remote-alias>
+              <ordinal>34</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>577</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BsmtFinType2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BsmtFinType2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BsmtFinType2</remote-alias>
+              <ordinal>35</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BsmtFinSF2</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[BsmtFinSF2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BsmtFinSF2</remote-alias>
+              <ordinal>36</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>152</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BsmtUnfSF</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[BsmtUnfSF]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BsmtUnfSF</remote-alias>
+              <ordinal>37</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>710</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalBsmtSF</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TotalBsmtSF]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalBsmtSF</remote-alias>
+              <ordinal>38</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>648</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Heating</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Heating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Heating</remote-alias>
+              <ordinal>39</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HeatingQC</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[HeatingQC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HeatingQC</remote-alias>
+              <ordinal>40</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CentralAir</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CentralAir]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CentralAir</remote-alias>
+              <ordinal>41</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Electrical</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Electrical]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Electrical</remote-alias>
+              <ordinal>42</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>1stFlrSF</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[1stFlrSF]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>1stFlrSF</remote-alias>
+              <ordinal>43</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>683</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2ndFlrSF</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[2ndFlrSF]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2ndFlrSF</remote-alias>
+              <ordinal>44</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>389</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LowQualFinSF</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[LowQualFinSF]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LowQualFinSF</remote-alias>
+              <ordinal>45</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GrLivArea</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[GrLivArea]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GrLivArea</remote-alias>
+              <ordinal>46</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>773</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BsmtFullBath</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[BsmtFullBath]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BsmtFullBath</remote-alias>
+              <ordinal>47</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BsmtHalfBath</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[BsmtHalfBath]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BsmtHalfBath</remote-alias>
+              <ordinal>48</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FullBath</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[FullBath]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FullBath</remote-alias>
+              <ordinal>49</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HalfBath</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[HalfBath]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HalfBath</remote-alias>
+              <ordinal>50</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BedroomAbvGr</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[BedroomAbvGr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BedroomAbvGr</remote-alias>
+              <ordinal>51</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>KitchenAbvGr</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[KitchenAbvGr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>KitchenAbvGr</remote-alias>
+              <ordinal>52</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>KitchenQual</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[KitchenQual]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>KitchenQual</remote-alias>
+              <ordinal>53</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotRmsAbvGrd</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TotRmsAbvGrd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotRmsAbvGrd</remote-alias>
+              <ordinal>54</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Functional</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Functional]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Functional</remote-alias>
+              <ordinal>55</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fireplaces</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Fireplaces]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fireplaces</remote-alias>
+              <ordinal>56</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FireplaceQu</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FireplaceQu]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FireplaceQu</remote-alias>
+              <ordinal>57</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GarageType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GarageType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GarageType</remote-alias>
+              <ordinal>58</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GarageYrBlt</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GarageYrBlt]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GarageYrBlt</remote-alias>
+              <ordinal>59</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GarageFinish</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GarageFinish]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GarageFinish</remote-alias>
+              <ordinal>60</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GarageCars</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[GarageCars]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GarageCars</remote-alias>
+              <ordinal>61</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GarageArea</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[GarageArea]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GarageArea</remote-alias>
+              <ordinal>62</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>414</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GarageQual</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GarageQual]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GarageQual</remote-alias>
+              <ordinal>63</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GarageCond</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GarageCond]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GarageCond</remote-alias>
+              <ordinal>64</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PavedDrive</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PavedDrive]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PavedDrive</remote-alias>
+              <ordinal>65</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WoodDeckSF</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[WoodDeckSF]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>WoodDeckSF</remote-alias>
+              <ordinal>66</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>261</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OpenPorchSF</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[OpenPorchSF]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OpenPorchSF</remote-alias>
+              <ordinal>67</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>194</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EnclosedPorch</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[EnclosedPorch]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EnclosedPorch</remote-alias>
+              <ordinal>68</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>3SsnPorch</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[3SsnPorch]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>3SsnPorch</remote-alias>
+              <ordinal>69</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ScreenPorch</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ScreenPorch]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ScreenPorch</remote-alias>
+              <ordinal>70</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>57</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PoolArea</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[PoolArea]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PoolArea</remote-alias>
+              <ordinal>71</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PoolQC</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PoolQC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PoolQC</remote-alias>
+              <ordinal>72</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fence</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Fence]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fence</remote-alias>
+              <ordinal>73</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MiscFeature</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MiscFeature]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MiscFeature</remote-alias>
+              <ordinal>74</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MiscVal</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MiscVal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MiscVal</remote-alias>
+              <ordinal>75</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MoSold</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MoSold]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MoSold</remote-alias>
+              <ordinal>76</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YrSold</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[YrSold]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YrSold</remote-alias>
+              <ordinal>77</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SaleType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SaleType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SaleType</remote-alias>
+              <ordinal>78</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SaleCondition</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SaleCondition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SaleCondition</remote-alias>
+              <ordinal>79</ordinal>
+              <family>train.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SalePrice</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SalePrice]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SalePrice</remote-alias>
+              <ordinal>80</ordinal>
+              <family>train.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>586</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train.csv_FE1D300E2D8C47C49D91B226A6CCA05A]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Costa Rica&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='train.csv' id='train.csv_FE1D300E2D8C47C49D91B226A6CCA05A'>
+            <properties context=''>
+              <relation connection='textscan.0y7rfi21kvb4g117cz1yz1ddi0hq' name='train.csv' table='[train#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_SV' separator=','>
+                  <column datatype='integer' name='Id' ordinal='0' />
+                  <column datatype='integer' name='MSSubClass' ordinal='1' />
+                  <column datatype='string' name='MSZoning' ordinal='2' />
+                  <column datatype='string' name='LotFrontage' ordinal='3' />
+                  <column datatype='integer' name='LotArea' ordinal='4' />
+                  <column datatype='string' name='Street' ordinal='5' />
+                  <column datatype='string' name='Alley' ordinal='6' />
+                  <column datatype='string' name='LotShape' ordinal='7' />
+                  <column datatype='string' name='LandContour' ordinal='8' />
+                  <column datatype='string' name='Utilities' ordinal='9' />
+                  <column datatype='string' name='LotConfig' ordinal='10' />
+                  <column datatype='string' name='LandSlope' ordinal='11' />
+                  <column datatype='string' name='Neighborhood' ordinal='12' />
+                  <column datatype='string' name='Condition1' ordinal='13' />
+                  <column datatype='string' name='Condition2' ordinal='14' />
+                  <column datatype='string' name='BldgType' ordinal='15' />
+                  <column datatype='string' name='HouseStyle' ordinal='16' />
+                  <column datatype='integer' name='OverallQual' ordinal='17' />
+                  <column datatype='integer' name='OverallCond' ordinal='18' />
+                  <column datatype='integer' name='YearBuilt' ordinal='19' />
+                  <column datatype='integer' name='YearRemodAdd' ordinal='20' />
+                  <column datatype='string' name='RoofStyle' ordinal='21' />
+                  <column datatype='string' name='RoofMatl' ordinal='22' />
+                  <column datatype='string' name='Exterior1st' ordinal='23' />
+                  <column datatype='string' name='Exterior2nd' ordinal='24' />
+                  <column datatype='string' name='MasVnrType' ordinal='25' />
+                  <column datatype='integer' name='MasVnrArea' ordinal='26' />
+                  <column datatype='string' name='ExterQual' ordinal='27' />
+                  <column datatype='string' name='ExterCond' ordinal='28' />
+                  <column datatype='string' name='Foundation' ordinal='29' />
+                  <column datatype='string' name='BsmtQual' ordinal='30' />
+                  <column datatype='string' name='BsmtCond' ordinal='31' />
+                  <column datatype='string' name='BsmtExposure' ordinal='32' />
+                  <column datatype='string' name='BsmtFinType1' ordinal='33' />
+                  <column datatype='integer' name='BsmtFinSF1' ordinal='34' />
+                  <column datatype='string' name='BsmtFinType2' ordinal='35' />
+                  <column datatype='integer' name='BsmtFinSF2' ordinal='36' />
+                  <column datatype='integer' name='BsmtUnfSF' ordinal='37' />
+                  <column datatype='integer' name='TotalBsmtSF' ordinal='38' />
+                  <column datatype='string' name='Heating' ordinal='39' />
+                  <column datatype='string' name='HeatingQC' ordinal='40' />
+                  <column datatype='string' name='CentralAir' ordinal='41' />
+                  <column datatype='string' name='Electrical' ordinal='42' />
+                  <column datatype='integer' name='1stFlrSF' ordinal='43' />
+                  <column datatype='integer' name='2ndFlrSF' ordinal='44' />
+                  <column datatype='integer' name='LowQualFinSF' ordinal='45' />
+                  <column datatype='integer' name='GrLivArea' ordinal='46' />
+                  <column datatype='integer' name='BsmtFullBath' ordinal='47' />
+                  <column datatype='integer' name='BsmtHalfBath' ordinal='48' />
+                  <column datatype='integer' name='FullBath' ordinal='49' />
+                  <column datatype='integer' name='HalfBath' ordinal='50' />
+                  <column datatype='integer' name='BedroomAbvGr' ordinal='51' />
+                  <column datatype='integer' name='KitchenAbvGr' ordinal='52' />
+                  <column datatype='string' name='KitchenQual' ordinal='53' />
+                  <column datatype='integer' name='TotRmsAbvGrd' ordinal='54' />
+                  <column datatype='string' name='Functional' ordinal='55' />
+                  <column datatype='integer' name='Fireplaces' ordinal='56' />
+                  <column datatype='string' name='FireplaceQu' ordinal='57' />
+                  <column datatype='string' name='GarageType' ordinal='58' />
+                  <column datatype='string' name='GarageYrBlt' ordinal='59' />
+                  <column datatype='string' name='GarageFinish' ordinal='60' />
+                  <column datatype='integer' name='GarageCars' ordinal='61' />
+                  <column datatype='integer' name='GarageArea' ordinal='62' />
+                  <column datatype='string' name='GarageQual' ordinal='63' />
+                  <column datatype='string' name='GarageCond' ordinal='64' />
+                  <column datatype='string' name='PavedDrive' ordinal='65' />
+                  <column datatype='integer' name='WoodDeckSF' ordinal='66' />
+                  <column datatype='integer' name='OpenPorchSF' ordinal='67' />
+                  <column datatype='integer' name='EnclosedPorch' ordinal='68' />
+                  <column datatype='integer' name='3SsnPorch' ordinal='69' />
+                  <column datatype='integer' name='ScreenPorch' ordinal='70' />
+                  <column datatype='integer' name='PoolArea' ordinal='71' />
+                  <column datatype='string' name='PoolQC' ordinal='72' />
+                  <column datatype='string' name='Fence' ordinal='73' />
+                  <column datatype='string' name='MiscFeature' ordinal='74' />
+                  <column datatype='integer' name='MiscVal' ordinal='75' />
+                  <column datatype='integer' name='MoSold' ordinal='76' />
+                  <column datatype='integer' name='YrSold' ordinal='77' />
+                  <column datatype='string' name='SaleType' ordinal='78' />
+                  <column datatype='string' name='SaleCondition' ordinal='79' />
+                  <column datatype='integer' name='SalePrice' ordinal='80' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Hoja 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train' name='federated.1noxwxz16ry83013cnkfo1ddhl8o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1noxwxz16ry83013cnkfo1ddhl8o'>
+            <column datatype='integer' name='[Sale Price (agrupación)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='4' formula='[SalePrice]' peg='0' size='25311' />
+            </column>
+            <column caption='Sale Price' datatype='integer' name='[SalePrice]' role='measure' type='quantitative' />
+            <column-instance column='[SalePrice]' derivation='Count' name='[cnt:SalePrice:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sale Price (agrupación)]' derivation='None' name='[none:Sale Price (agrupación):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.1noxwxz16ry83013cnkfo1ddhl8o].[cnt:SalePrice:qk]</rows>
+        <cols>[federated.1noxwxz16ry83013cnkfo1ddhl8o].[none:Sale Price (agrupación):qk]</cols>
+        <show-full-range>
+          <column>[federated.1noxwxz16ry83013cnkfo1ddhl8o].[Sale Price (agrupación) 2]</column>
+          <column>[federated.1noxwxz16ry83013cnkfo1ddhl8o].[Sale Price (agrupación)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{DA29D937-3E3F-41AF-B90A-0BF796826143}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Hoja 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='174'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1noxwxz16ry83013cnkfo1ddhl8o].[none:Sale Price (agrupación) 2:ok]</field>
+            <field>[federated.1noxwxz16ry83013cnkfo1ddhl8o].[none:Sale Price (agrupación):qk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{F53F3E6A-B829-458C-A646-D7D23DCBBAF9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Hoja 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
